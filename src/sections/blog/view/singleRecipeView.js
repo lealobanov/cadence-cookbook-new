@@ -21,7 +21,7 @@ import PostCommentForm from "../post-comment-form";
 import PostDetailsHero from "../post-details-hero";
 import { PostDetailsSkeleton } from "../post-skeleton";
 
-export default function PostDetailsHomeView({ recipe, relatedRecipes }) {
+export default function SingleRecipeView({ recipe, relatedRecipes }) {
   // const { post, postError, postLoading } = useGetPost(title);
 
   // const { latestPosts, latestPostsLoading } = useGetLatestPosts(title);
@@ -281,7 +281,7 @@ export default function PostDetailsHomeView({ recipe, relatedRecipes }) {
   );
 }
 
-PostDetailsHomeView.propTypes = {
+SingleRecipeView.propTypes = {
   recipe: PropTypes.object,
   relatedRecipes: PropTypes.array,
 };
