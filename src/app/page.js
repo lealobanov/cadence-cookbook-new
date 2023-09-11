@@ -1,5 +1,5 @@
 import { getAllRecipes } from 'src/data/recipes';
-import { PostListHomeView } from 'src/sections/blog/view';
+import { HomePageView } from 'src/sections/blog/view';
 
 export const metadata = {
   title: 'Cadence Cookbook | Home',
@@ -8,5 +8,5 @@ export const metadata = {
 export default async function HomePage() {
   const recipes = await getAllRecipes();
 
-  return <PostListHomeView recipes={recipes} />;
+  return <HomePageView recipes={recipes} />;
 }

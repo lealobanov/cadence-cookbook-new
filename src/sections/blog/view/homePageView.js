@@ -19,7 +19,7 @@ const _carouselsExample = [...Array(20)].map((_, index) => ({
   description: _mock.description(index),
 }));
 
-export default function PostListHomeView({ recipes }) {
+export default function HomePageView({ recipes }) {
   const settings = useSettingsContext();
 
   const [sortBy, setSortBy] = useState("latest");
@@ -68,7 +68,7 @@ export default function PostListHomeView({ recipes }) {
   );
 }
 
-PostListHomeView.propTypes = {
+HomePageView.propTypes = {
   recipes: PropTypes.array,
 };
 

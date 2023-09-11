@@ -1,5 +1,5 @@
 import { paths } from "src/routes/paths";
-import { PostDetailsHomeView } from "src/sections/blog/view";
+import { SingleRecipeView } from "src/sections/blog/view";
 import { getAllRecipes, getRelatedRecipes, getSingleRecipe } from "src/data/recipes";
 import { redirect } from 'next/navigation';
 
@@ -22,5 +22,5 @@ export default async function RecipePage({params}) {
   }
   
   const relatedRecipes = await getRelatedRecipes(params.slug);
-  return <PostDetailsHomeView recipe={recipe} relatedRecipes={relatedRecipes} />;
+  return <SingleRecipeView recipe={recipe} relatedRecipes={relatedRecipes} />;
 }
