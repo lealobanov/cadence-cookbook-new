@@ -1,0 +1,3 @@
+[submodule "src/data/recipes/sample-recipe"]
+	path = src/data/recipes/sample-recipe
+	url = git@github.com:lealobanov/cadence-cookbook-sample-recipe.git
