@@ -22,6 +22,10 @@ export async function getSingleRecipe(slug) {
   return recipes.filter((i) => i.slug === slug)[0];
 }
 
+export async function getRecipesByParentModule(module) {
+  return recipes.filter((i) => i.module === module);
+}
+
 export async function getRelatedRecipes(slug) {
   // Implement a filter based on recipe tags or module
   return recipes;
