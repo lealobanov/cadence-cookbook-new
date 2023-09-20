@@ -22,7 +22,7 @@ export default function PostEditView({ title }) {
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'lg'}>
-      <CustomBreadcrumbs
+      {/* <CustomBreadcrumbs
         heading="Edit"
         links={[
           {
@@ -40,7 +40,7 @@ export default function PostEditView({ title }) {
         sx={{
           mb: { xs: 3, md: 5 },
         }}
-      />
+      /> */}
 
       <PostNewEditForm currentPost={currentPost} />
     </Container>

@@ -17,7 +17,7 @@ export default function PostCreateView() {
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'lg'}>
-      <CustomBreadcrumbs
+      {/* <CustomBreadcrumbs
         heading="Create a new post"
         links={[
           {
@@ -35,7 +35,7 @@ export default function PostCreateView() {
         sx={{
           mb: { xs: 3, md: 5 },
         }}
-      />
+      /> */}
 
       <PostNewEditForm />
     </Container>

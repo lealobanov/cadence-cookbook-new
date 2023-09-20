@@ -97,7 +97,7 @@ export default function PostNewEditForm({ currentPost }) {
       reset();
       preview.onFalse();
       enqueueSnackbar(currentPost ? 'Update success!' : 'Create success!');
-      router.push(paths.dashboard.post.root);
+      router.push("paths.dashboard.post.root");
       console.info('DATA', data);
     } catch (error) {
       console.error(error);
